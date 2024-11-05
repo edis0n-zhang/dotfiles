@@ -16,5 +16,9 @@
         create: true
     ~/.zprofile: zprofile
     ~/.zshenv: zshenv
-
-
+    ~/.vscode/:
+        path: vscode
+        create: true
+    ~/.config/:
+        path: config
+        create: true
