@@ -5,3 +5,16 @@
     ~/.zshrc: zshrc
 
 
+- clean: ['~']
+
+- link:
+    ~/.profile: profile
+    ~/.bash_profile: bash_profile
+    ~/.bashrc: bashrc
+    ~/.ssh/config:
+        path: ssh/config
+        create: true
+    ~/.zprofile: zprofile
+    ~/.zshenv: zshenv
+
+
