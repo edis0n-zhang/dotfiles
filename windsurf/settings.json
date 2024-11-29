@@ -129,5 +129,6 @@
   // misc
   "makefile.configureOnOpen": true,
   "find-it-faster.general.killTerminalAfterUse": true,
-  "find-it-faster.general.useTerminalInEditor": true
+  "find-it-faster.general.useTerminalInEditor": true,
+  "security.workspace.trust.untrustedFiles": "open"
 }

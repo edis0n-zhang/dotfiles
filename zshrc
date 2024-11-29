@@ -48,3 +48,4 @@ eval "$(rbenv init -)"
 
 # Added by Windsurf
 export PATH="/Users/edisonzhang/.codeium/windsurf/bin:$PATH"
+alias ws="windsurf"
