@@ -1,0 +1,112 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+cmd+t",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "shift+cmd+]",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "shift+cmd+]",
+    "command": "-workbench.action.nextEditor"
+  },
+  {
+    "key": "shift+cmd+[",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "shift+cmd+[",
+    "command": "-workbench.action.previousEditor"
+  },
+  {
+    "key": "shift+cmd+e",
+    "command": "workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "shift+cmd+e",
+    "command": "-workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+
+  // neovim
+
+  // Editor
+  {
+    "command": "workbench.action.nextEditor",
+    "key": "; j",
+    "when": "neovim.init && neovim.mode != 'insert'"
+  },
+  {
+    "command": "workbench.action.previousEditor",
+    "key": "; k",
+    "when": "neovim.init && neovim.mode != 'insert'"
+  },
+  {
+    "key": "; w",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "neovim.init && neovim.mode != 'insert'"
+  },
+
+  // Toggle Explorer
+  {
+    "command": "workbench.view.explorer",
+    "key": "; e",
+    "when": "!explorerViewletFocus && neovim.init && neovim.mode != 'insert'"
+  },
+  {
+    "command": "workbench.action.toggleSidebarVisibility",
+    "key": "; e",
+    "when": "explorerViewletFocus && neovim.init && neovim.mode != 'insert'"
+  },
+
+  // Toggle Terminal
+  {
+    "command": "workbench.action.terminal.toggleTerminal",
+    "key": "; t",
+    "when": "!terminalFocus && neovim.init && neovim.mode != 'insert'"
+  },
+  {
+    "command": "workbench.action.togglePanel",
+    "key": "; t",
+    "when": "terminalFocus && neovim.init && neovim.mode != 'insert'"
+  },
+  {
+    "key": "; shift+t",
+    "command": "workbench.action.terminal.new",
+    "when": "neovim.init && neovim.mode != 'insert' && terminalProcessSupported || terminalWebExtensionContributedProfile"
+  },
+
+  // Toggle Chat
+  {
+    "command": "windsurf.prioritized.chat.open",
+    "key": "; l",
+    "when": "neovim.init && neovim.mode != 'insert'"
+  },
+
+  // Toggle Chat
+  {
+    "command": "windsurf.prioritized.command.open",
+    "key": "; i",
+    "when": "neovim.init && neovim.mode != 'insert'"
+  },
+
+  // Cascade Diff
+  {
+    "key": "; f",
+    "command": "windsurf.prioritized.cascadeFocusNextFile",
+    "when": "!terminalFocus && neovim.mode != 'insert'"
+  },
+  {
+    "key": "; n",
+    "command": "windsurf.prioritized.cascadeFocusNextHunk",
+    "when": "editorTextFocus && windsurf.canAcceptOrRejectAllCascadeEditsInFile && neovim.init && neovim.mode != 'insert'"
+  },
+  {
+    "key": "; shift+n",
+    "command": "windsurf.prioritized.cascadeFocusPreviousHunk",
+    "when": "editorTextFocus && windsurf.canAcceptOrRejectAllCascadeEditsInFile && neovim.init && neovim.mode != 'insert'"
+  }
+]

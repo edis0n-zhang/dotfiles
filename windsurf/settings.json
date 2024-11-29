@@ -1,0 +1,133 @@
+{
+  "code-runner.runInTerminal": true,
+  "workbench.colorTheme": "Vesper",
+  "editor.tabSize": 2,
+  "terminal.external.osxExec": "Warp.app",
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "-outdir=%OUTDIR%",
+        "%DOC%"
+      ],
+      "env": {}
+    },
+    {
+      "name": "xelatex",
+      "command": "xelatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ],
+      "env": {}
+    },
+    {
+      "name": "pdflatex",
+      "command": "pdflatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ],
+      "env": {}
+    },
+    {
+      "name": "bibtex",
+      "command": "bibtex",
+      "args": ["%DOCFILE%"],
+      "env": {}
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "pdfLaTeX",
+      "tools": ["pdflatex"]
+    },
+    {
+      "name": "latexmk 🔃",
+      "tools": ["latexmk"]
+    },
+    {
+      "name": "xelatex",
+      "tools": ["xelatex"]
+    },
+    {
+      "name": "pdflatex ➞ bibtex ➞ pdflatex`×2",
+      "tools": ["pdflatex", "bibtex", "pdflatex", "pdflatex"]
+    },
+    {
+      "name": "xelatex ➞ bibtex ➞ xelatex`×2",
+      "tools": ["xelatex", "bibtex", "xelatex", "xelatex"]
+    }
+  ],
+  "editor.accessibilitySupport": "off",
+  "window.zoomLevel": 1,
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
+  "svelte.enable-ts-plugin": true,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "codeium.enableConfig": {
+    "*": true
+  },
+  "workbench.activityBar.location": "hidden",
+
+  // FROM  Igor Bedesqui
+  //    window
+  //     title bar
+  "window.title": "${dirty}${activeRepositoryName}/${activeRepositoryBranchName}${separator}${activeEditorShort}${separator}",
+
+  //     top bar
+  // "workbench.editor.showTabs": "none", // hide tabs
+  "breadcrumbs.enabled": false, // hides breadcrumb path at top of window
+  "window.commandCenter": false, // hides those little squares on the top right of the window
+  "workbench.editor.editorActionsLocation": "hidden", // hides the "format" and ellipsis buttons on the top right of the window
+
+  //     minimap
+  "editor.minimap.renderCharacters": false, // make minimap blockish (low level of detail)
+  "editor.hideCursorInOverviewRuler": true, // don't highlight current line in scrollbar
+  "editor.minimap.autohide": true,
+  "workbench.iconTheme": "chalice-icon-theme", // hide bottom bar
+
+  // ui stuff
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.tree.indent": 14,
+
+  //    font
+  "editor.fontSize": 12,
+  "editor.lineHeight": 1.42857, // makes font size 14 have line height of ~20px
+  "editor.fontFamily": "IBM Plex Mono Regular, monospace", // font
+  "apc.font.family": "IBM Plex Mono Regular", // apply font to ALL the UI, requires APC extension
+
+  // text editing stuff
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.lineNumbers": "relative",
+
+  "editor.scrollbar.verticalScrollbarSize": 4,
+  "windsurf.autocompleteSpeed": "fast",
+  "workbench.statusBar.visible": false,
+  "windsurf.cascadeOpenOnReload": false,
+  "search.defaultViewMode": "tree",
+  "search.mode": "newEditor",
+
+  // terminal
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.defaultLocation": "editor",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "workbench.layoutControl.enabled": false,
+
+  // misc
+  "makefile.configureOnOpen": true,
+  "find-it-faster.general.killTerminalAfterUse": true,
+  "find-it-faster.general.useTerminalInEditor": true
+}
