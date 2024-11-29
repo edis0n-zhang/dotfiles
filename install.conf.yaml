@@ -17,3 +17,8 @@
     ~/.zshenv: zshenv
     ~/.zshrc: zshrc
     ~/.gitconfig: gitconfig
+
+- shell:
+  -
+    command: windsurf --list-extensions > ./windsurf/extensions.txt
+    stderr: true
