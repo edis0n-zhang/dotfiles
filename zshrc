@@ -28,7 +28,7 @@ unset __conda_setup
 export GOPATH=$HOME/go
 export GOROOT=/usr/local/go
 export GOBIN=$GOPATH/bin
-export PATH=$PATH:$GOPATH
+export PATH=$PATH:$GOBIN
 export PATH=$PATH:$GOROOT/bin
 
 eval "$(zoxide init zsh --cmd cd)"
@@ -36,9 +36,9 @@ eval "$(zoxide init zsh --cmd cd)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
+# export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
 
-eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/uew.omp.json)"
+eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/nordtron.omp.json)"
 
 alias z="nvim"
 
@@ -49,3 +49,20 @@ eval "$(rbenv init -)"
 # Added by Windsurf
 export PATH="/Users/edisonzhang/.codeium/windsurf/bin:$PATH"
 alias ws="windsurf"
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv virtualenv-init -)"
+
+
+# BEGIN opam configuration
+# This is useful if you're using opam as it adds:
+#   - the correct directories to the PATH
+#   - auto-completion for the opam binary
+# This section can be safely removed at any time if needed.
+[[ ! -r '/Users/edisonzhang/.opam/opam-init/init.zsh' ]] || source '/Users/edisonzhang/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
+# END opam configuration
+
+# Added by Windsurf - Next
+export PATH="/Users/edisonzhang/.codeium/windsurf/bin:$PATH"

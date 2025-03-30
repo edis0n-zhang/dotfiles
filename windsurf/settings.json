@@ -103,7 +103,7 @@
   "workbench.tree.indent": 14,
 
   //    font
-  "editor.fontSize": 12,
+  "editor.fontSize": 13,
   "editor.lineHeight": 1.42857, // makes font size 14 have line height of ~20px
   "editor.fontFamily": "IBM Plex Mono Regular, monospace", // font
   "apc.font.family": "IBM Plex Mono Regular", // apply font to ALL the UI, requires APC extension
@@ -114,7 +114,6 @@
   "editor.lineNumbers": "relative",
 
   "editor.scrollbar.verticalScrollbarSize": 4,
-  "windsurf.autocompleteSpeed": "fast",
   "workbench.statusBar.visible": false,
   "windsurf.cascadeOpenOnReload": false,
   "search.defaultViewMode": "tree",
@@ -130,5 +129,19 @@
   "makefile.configureOnOpen": true,
   "find-it-faster.general.killTerminalAfterUse": true,
   "find-it-faster.general.useTerminalInEditor": true,
-  "security.workspace.trust.untrustedFiles": "open"
+  "security.workspace.trust.untrustedFiles": "open",
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "windsurf.autocompleteSpeed": "fast",
+  "windsurf.autoExecutionPolicy": "off",
+  "windsurf.explainAndFixInCurrentConversation": true,
+  "windsurf.chatFontSize": "default",
+  "windsurf.rememberLastModelSelection": true,
+  "windsurf.openRecentConversation": true,
+  "windsurf.enableAutocomplete": false
 }
