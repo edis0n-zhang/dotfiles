@@ -17,6 +17,7 @@
     ~/.zshenv: zshenv
     ~/.zshrc: zshrc
     ~/.gitconfig: gitconfig
+    ~/.config/nvim: nvim
 
 - shell:
   -

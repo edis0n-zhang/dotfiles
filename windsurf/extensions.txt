@@ -3,9 +3,10 @@ arcticicestudio.nord-visual-studio-code
 artlaman.chalice-icon-theme
 asvetliakov.vscode-neovim
 bradlc.vscode-tailwindcss
+charliermarsh.ruff
+codeium.windsurfpyright
 curve.nord-dark-pro
 dizy.lex-flex-yacc-bison
-drcika.apc-extension
 dsznajder.es7-react-js-snippets
 eamodio.gitlens
 esbenp.prettier-vscode
@@ -30,6 +31,7 @@ ms-vscode.cpptools-themes
 ms-vscode.makefile-tools
 ms-vscode.remote-explorer
 naumovs.color-highlight
+ocamllabs.ocaml-platform
 penagos.vgdb
 raunofreiberg.vesper
 sswg.swift-lang
@@ -40,4 +42,5 @@ twxs.cmake
 undotree.undo-tree
 vadimcn.vscode-lldb
 xabikos.javascriptsnippets
+yrumad.oxocarbon-5
 yzhang.markdown-all-in-one
